@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{
+    Path = /usr/local/texlive/2016/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Tzu-Heng Lin (Brian)}\\ % Your name
+{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\textsc{Current, from Mar 2016}\par}
+
+{\raggedright\large Research Assistant at \\ \textsc{Future Comms \& Int. Lab, Tsinghua University}
+\\
+\textit{Data Mining with Big Data}\\[5pt]}
+
+\normalsize{Research in Online Shopping Behaviors and Online Video Consumption Behaviors of Users, using Hadoop and Machine Learning Skills.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\textsc{July 2016 -- Aug 2016}\par} 
+
+{\raggedright\large Research Intern at \\ \textsc{Academia Sinica}, Taiwan\\
+\textit{Big Data Analytics, Machine Learning}\\[5pt]}
+
+\normalsize{Research in Facebook Fan Pages in Taiwan, found patterns in posts and real categories of pages, skills including Statistics, Machine Learning, Text Mining, Time Series Analysis.}\\
+
+%----------------------------------------------------------------------------------------
+%	ORGANIZATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Organizations}
+
+{\raggedleft\textsc{Current, from Sep 2016}\par}
+
+{\raggedright\large Vice President at \\ \textsc{THU Maker Space}
+\\
+\textit{Lead the Public Relation Dept. \& Standing Dept.}\\[5pt]}
+
+\normalsize{Provided analysis of spreads, .}\\
+
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENT & AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Achievement \& Awards} 
+
+\begin{tabular}{rl}
+%------------------------------------------------
+2016	 & \textbf{Maker Representative of Tsinghua University}\\
+& \textit{Tsinghua University}\\ \\
+
+%------------------------------------------------
+2015	 & \textbf{3\textsuperscript{rd} Prize, China-US Maker Competition Final}\\
+& \textit{Minister of Education, PRC; Intel Inc.}\\ \\
+
+%------------------------------------------------
+2015,16	 & \textbf{1\textsuperscript{st} Place Consecutively, Tsinghua Make-a-thon}\\
+& \textit{Tsinghua University}\\ \\
+
+%------------------------------------------------
+2015	 & \textbf{3\textsuperscript{rd} Prize, Tsinghua Teamstyle Program Contest}\\
+& \textit{Tsinghua University}\\ \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships} 
+
+\begin{tabular}{rl}
+
+%------------------------------------------------
+2015	 & \textbf{1\textsuperscript{st} Prize, Scholarship for Taiwanese Student}\\
+& \textit{Minister of Education, PRC}\\ \\
+
+%------------------------------------------------
+2015	 & \textbf{Outstanding Scholarship for Science and Technology}\\
+& \textit{Tsinghua University}\\ \\
+
+%------------------------------------------------
+2015	 & \textbf{Outstading Scholarship for Social Work}\\
+& \textit{Tsinghua University}\\ \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & Born: \textit{TWN}, Grown: \textit{SHG}, Now: \textit{BJ} \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +86 131-2192-9165 in \textsc{China} \\ % Phone number
+\raisebox{-3pt}{\Mobilefone} & +886 911-482-136 in \textsc{Taiwan} \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:lzhbrian@gmail.com}{lzhbrian@gmail.com} \\ % Email address
+\faLinkedin & \href{http://www.linkedin.com/in/lzhbrian}{linkedin/lzhbrian} \\ % Linkedin
+\faGithub & \href{http://www.github.com/lzhbrian}{github/lzhbrian} \\ % Linkedin
+\faFacebook & \href{http://www.facebook.com/lzhbrian}{facebook/lzhbrian} \\ % Linkedin
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2014 -- \textsc{Present} & \textbf{Bachelor of Science} \\ 
+& \textsc{Electronic Information 3.63/4.0} \\ 
+& \textit{Tsinghua University}\\
+&\\
+	 
+%------------------------------------------------
+% EDUCATION 2
+%------------------------------------------------
+
+2014 -- \textsc{Present} &  \textbf{Bachelor of Business Administration} \\ 
+& \small Double Major \\
+& \textsc{Business Management 3.85/4.0} \\ 
+& \textit{Tsinghua University}\\
+&\\
+
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Professional Skills} 
+
+\begin{tabular}{rl}
+Expert
+& Data Mining \\
+& \textsc{Python}, \textsc{Hadoop}, \textsc{C/C++}, \textsc{Matab}, \textsc{Git} \\
+& \\
+Intermediate
+& Data Visualization, \textsc{Tableau} \\
+& Machine Learning, \textsc{Theano}, \textsc{DL4J} \\
+& \textsc{Java}, \textsc{Swift}, \LaTeX, \textsc{SQL} \\
+& Linux, OSX, Windows \\
+\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages} 
+
+\begin{tabular}{rl}
+\textsc{Mandarin}
+& Native Speaker \\
+& \\
+\textsc{English}
+& Full Professional Proficiency \\
+& \textsc{TOEIC}: 910 \\
+& \textsc{TOEFL}: 102 \\
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications} 
+
+\begin{tabular}{rl}
+
+%------------------------------------------------
+2016	 & \textbf{Profiling Users by Online Shopping Behaviors}\\
+& \textit{xxx Conference}\\ \\
+
+%------------------------------------------------
+2016	 & \textbf{Video}\\
+& \textit{xxx Conference}\\ \\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
