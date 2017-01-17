@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+% Edited : lzhbrian
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+%%%
+% add by lzhbrian
+\newcommand{\resumeSubheadingedu}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      ~~\textit{\small#3} & \textit{\small #4} \\
+      ~~\textit{\small#5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadinghonor}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2}\\
+      ~~\textit{\small#3}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadinghonortwo}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2}\\
+      ~~\textit{\small#3}\\
+      ~~\textit{\small#4}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\sectionwithbox}[1]{
+  \section{\colorbox[rgb]{0.8,0.8,0.8}{{#1}}}
+}
+\newcommand{\resumeSubheadinghonorone}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+%%%
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \color{blue}\textbf{\href{http://www.lzhbrian.me/}{\Large Tzu-Heng Lin (Brian) \small Maker, Hacker}} & 
+  Website : \color{blue}\href{http://lzhbrian.me/}{http://lzhbrian.me} \\
+  \small~~~~Born in \emph{Taiwan}, Grown up in \emph{Shanghai}, now Studying in \emph{Beijing} (will graduate in 2018) & Email : \href{mailto:lzhbrian@gmail.com}{lzhbrian@gmail.com}\\
+  
+   ~Currently : Junior student in \emph{Dept.of Electronic Engineering, Tsinghua University} & Mobile : +86-131-2192-9165 \\
+
+   ~\underline{Objective : \emph{Seeking Summer Internship in 2017}} &
+   	\color{blue}\href{http://www.linkedin.com/in/lzhbrian}{\textbf{[Linkedin]}}
+	\color{blue}\href{http://www.github.com/lzhbrian}{\textbf{[Github]}}
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+%\section{\colorbox[rgb]{0.8,0.8,0.8}{\makebox(70,10){Education}}}
+  \sectionwithbox{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingedu
+      {Tsinghua University (Dual Degree)}{Beijing, China}
+      {Bachelor of Science in Electronic Information;  GPA: 84/100}{Aug. 2014 -- June. 2018}
+      {Bachelor of Business Administration in Management (Dual Major);  GPA: 90/100}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\sectionwithbox{Technology Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, C/C++, R, Matlab, SQL}
+      \hfill
+      \textbf{Technologies}{: Git, Hadoop, Weka, MySQL, Tableau}
+    }
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\sectionwithbox{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Tsinghua University \color{blue}\href{http://fi.ee.tsinghua.edu.cn}{[link]}}{Beijing, China}
+      {\textbf{Research Assistant} in Future Communication \& Internet Lab}{Apr 2016 - Present (9 mo)}
+      \resumeItemListStart
+        \resumeItem{Live-streaming Video Mining}{(On-going work)}\\
+        \resumeItem{Online Shopping Behaviors Analysis}{(Paper in submission)}\\
+        \resumeItem{Online Video Consumption Behaviors Analysis}{(Paper in submission)}\\
+          {Processed TB scale data using Hadoop, Python, R \& Matlab.}\\
+          {Responsible for all of the data processing and analysis work.}
+          
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Academia Sinica \color{blue}\href{http://mmnet.iis.sinica.edu.tw}{[link]}}{Taipei, Taiwan}
+      {\textbf{Summer Research Internship} in Data Insights Research Lab}{July 2016 - Aug 2016 (2 mo)}
+      \resumeItemListStart
+        \resumeItem{Data Mining in Facebook Fan Pages: }\\
+          {\href{https://www.sinica.edu.tw/ch}{\emph{Academia Sinica}} is the Top National Academy of Taiwan.}\\
+          {Research in Facebook Fan Pages in Taiwan, found patterns in posts and real categories of pages.}\\
+          {Skills including Statistics, Machine Learning, Text Mining, Time Series Analysis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {THU MakerSpace \color{blue}\href{http://www.thumaker.cn}{[link]}}{Beijing, China}
+      {\textbf{Vice President}, 2 years experience in maker field}{Sep 2015 - Present (1.5 yrs)}
+      \resumeItemListStart
+        \resumeItem{Maker Events and Competitions held weekly: }\\
+          {THU MakerSpace is one of the greatest Maker Spaces in China. We have received letters from Premier Keqiang Li.}\\
+          {Lead the \emph{Project Dept}, the \emph{Public Relation Dept.} \& the \emph{Standing Dept.}}\\
+          {Conducted several projects, and also Winners of many Make-a-thons.}\\
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------OTHER PROJECTS-----------------
+\sectionwithbox{Other Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Web Development :}
+      {Lead the web development of \emph{Tsinghua Teamstyle Programming Competition}: {\color{blue}\href{http://github.com/eesast/ts17web}{\textbf{[github]}}}}
+  \resumeSubHeadingListEnd
+  
+
+%--------SELECTED HONORS------------
+\sectionwithbox{Selected Honors}
+  \resumeSubHeadingListStart
+    \resumeSubheadinghonorone
+      {Maker Representative}{, Tsinghua Universtiy \color{blue}\href{http://www.lzhbrian.me/posts_figure/maker.jpeg}{\textbf{[picture]}}}
+    
+     \resumeSubheadinghonor
+      {1st Prize Scholarship for Taiwanese Student}{, Minister of Education, PRC}
+      {\underline{Top 3/50}, Awarded 1st prize scholarship honor for Taiwanese student studying in Mainland China.}
+
+     \resumeSubheadinghonor
+      {Outstanding Scholarship for Comprehensive Performance}{, Tsinghua University}
+      {\underline{Top 35/260}, including excellence scholarships for \underline{Science and Technology}, \underline{Social Work}, \underline{Arts and Cultural} respectively.}
+    
+  \resumeSubHeadingListEnd
+
+
+%--------SELECTED COMPETITIONS------------
+\sectionwithbox{Selected Competitions Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheadinghonor
+      {Tsinghua Maker Challenge 2015,2016}{ : Consecutive Championships 
+      	
+	\color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[2015 press]}}
+	\color{blue}\href{https://mp.weixin.qq.com/s?__biz=MzA5MzMzODQzMQ==\&mid=2650612087\&idx=1\&sn=12fdb18a73edf403c69fd807c391184a\&mpshare=1\&scene=1\&srcid=0117G3nq1r4Pv0uqSLEmG3oy}{\textbf{[2016 description]}} 
+	
+	}
+      {\underline{Championships of 2015, 2016 respectively}. Tsinghua Maker Challenge is the biggest Make-a-thon held in Tsinghua.}
+    
+    
+     \resumeSubheadinghonortwo
+      {China-US Maker Competitions Final}{ : 3rd Prize 
+      \color{blue}\href{https://www.chinaus-maker.org}{\textbf{[link]}}
+      \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[press]}}
+      \color{blue}\href{http://www.todayfocus.cn/p/4149.html}{\textbf{[press]}}
+      }
+      {China-US Maker Competition is the \underline{biggest Make-a-thon in China \& US}}
+      {I led my team and won the \underline{5th place out of about 300 teams} all over the world in 2015.}
+
+     \resumeSubheadinghonor
+      {Tsinghua Teamstyle Program Contest}{ : 3rd Prize}
+      {A programming competition writing AI for games. I led my team and won the 5th place in 2015.}
+    
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
