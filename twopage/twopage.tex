@@ -25,7 +25,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
@@ -60,6 +60,14 @@
 
 %%%
 % add by lzhbrian
+\newcommand{\resumeSubheadingProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \emph{\small#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
 \newcommand{\resumeSubheadingedu}[7]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -158,17 +166,21 @@
       {Tsinghua University \color{blue}\href{http://fi.ee.tsinghua.edu.cn}{[link]}}{Beijing, China}
       {\textbf{Research Assistant} in Future Communication \& Internet Lab}{Apr 2016 - Present (9 mo)}
       \resumeItemListStart
-        \resumeItem{Online Shopping Behaviors Analysis}{(Paper in submission)}\\
-          {- Mining a 30-Day, Million-User-scale dataset of JD viewing log.}\\
-          {- Processed TB-scale data using Hadoop and Python.}\\
-        \resumeItem{Online Video Consumption Behaviors Analysis}{(Paper in submission)}\\
-          {- Mining a 2-Month, 10-Million-User, TB-scale dataset from an ISP including viewing records of most main Video Content Providers, including Youku, IQIYI, Sohu, LeTV, Tencent, KanKan, etc.}\\
+
+        \resumeItem{Online Video Consumption Behaviors Analysis}{(Finished, Paper in submission)}\\
+        \vspace{1mm}
+          {- Mining a \underline{TB-scale, 2-Month, 10-Million-User} dataset from an ISP including viewing records of most main Video Content Providers, including Youku, IQIYI, Sohu, LeTV, Tencent, KanKan, etc.}\\
           {- Studied the migratory behaviors of users, found potential migratory reasons.}\\
-          {- Processed the data using Hadoop and Python. Written hundreds of Hadoop MapReduce programs in Java.}\\
-          {- Analyze and Visualize the data using Matlab and R.}\\
-          {- Responsible for all of the data processing and analysis work.}
-        \resumeItem{Live-streaming Video Mining}{(On-going work)}\\
-          {}
+          {- Responsible for all of the data processing and analysis work.} \\
+          {~~~~- Written \underline{hundreds of Hadoop MapReduce programs} in Java and also use Python to process the data.}\\
+          {~~~~- Analyze and Visualize the data using Matlab and R.}\\
+
+        \resumeItem{Online Shopping Behaviors Analysis}{(Finished, Paper in submission)}\\
+        \vspace{1mm}
+          {- Mining a \underline{30-Day, Million-User-scale} dataset of JD viewing log.}\\
+          {- Discovered unique user behaviors when browsing.} \\
+          {- Responsible for most of the data processing and analysis work. (Same as the above Project)}\\
+          
       \resumeItemListEnd
   
     \resumeSubheading
@@ -176,10 +188,11 @@
       {\textbf{Summer Research Internship} in Data Insights Research Lab}{July 2016 - Aug 2016 (2 mo)}
       \resumeItemListStart
         \resumeItem{Data Mining in Facebook Fan Pages: }\\
+        \vspace{1mm}
           {- \href{https://www.sinica.edu.tw/ch}{\emph{Academia Sinica}} is the Top National Academy of Taiwan.}\\
-          {- Research in a dataset with more than 200,000 Facebook \emph{Fan Pages}, 28 million \emph{posts} with \emph{like} records in Taiwan.}\\
-          {- Found patterns in posts and real categories of pages.}\\
-          {- Skills including Statistics, Machine Learning, Text Mining, Time Series Analysis.}
+          {- Research in a dataset with more than \underline{200,000 Facebook \emph{Fan Pages}, 28 million \emph{posts} with \emph{like} records} in Taiwan.}\\
+          {~~~~- Found patterns in posts and real categories of pages.}\\
+          {~~~~- Skills including \emph{Statistics}, \emph{Machine Learning}, \emph{Text Mining}, \emph{Time Series Analysis}.}
         \resumeItem{Volunteer, Data Science in Taiwan Conference} {\color{blue}\href{http://www.datasci.tw}{[link]}} \\
       \resumeItemListEnd
 
@@ -187,30 +200,27 @@
       {Student Association of Science and Technology, EE, THU \color{blue}\href{http://www.eesast.com}{[link]}}{Beijing, China}
       {\textbf{Leader of Web Development}, Tsinghua Teamstyle Programming Competition}{Jul 2015 - May 2016 (10 mo)}
       \resumeItemListStart
-        \resumeItem{Web development:}\\
-          {- Led the web development team of \emph{Tsinghua Teamstyle Programming Competition}.}\\
-          {- Built the backend using \emph{Yii framework} (PHP, MVC).}\\
-          {- Designed and Built most data structures using \emph{MySQL}.}\\
-          {- Implemented most of the features, including \emph{Register}, \emph{Login}, \emph{Online Battle}, \emph{Forum} and \emph{Code submit}, etc.}\\
-          {- Co-work, version control using \emph{  it}. \color{blue}\href{http://github.com/eesast/ts17web}{\textbf{[github repo]}}}
+        \resumeItem{Web development: \color{blue}\href{http://github.com/eesast/ts17web}{\textbf{[github repo]}}}\\
+        \vspace{1mm}
+          {- Led the web development team of \emph{Tsinghua Teamstyle Programming Competition 2016}.}\\
+          {~~~~- Built the backend using \emph{Yii framework} (PHP, MVC).}\\
+          {~~~~- Designed and Built most data structures using \emph{MySQL}.}\\
+          {~~~~- Implemented most of the features, including \emph{Register}, \emph{Login}, \emph{Online Battle}, \emph{Forum} and \emph{Code submit}, etc.}\\
+          {- Co-work, version control using \emph{Git}. }
       \resumeItemListEnd
-
 
     \resumeSubheading
       {THU MakerSpace \color{blue}\href{http://www.thumaker.cn}{[link]}}{Beijing, China}
       {\textbf{Vice President}, 2 years experience in maker field}{Sep 2015 - Present (1.5 yrs)}
       \resumeItemListStart
         \resumeItem{Maker Events and Competitions held weekly: }\\
-          {- THU MakerSpace is one of the greatest Maker Spaces in China. We have received letters from Premier Keqiang Li.}\\
-          {- Led the work of \emph{Project Dept}, the \emph{Public Relation Dept.} \& the \emph{Standing Dept.}}\\
+        \vspace{1mm}
+          {- THU MakerSpace is one of the greatest Maker Spaces in China.} \\
+          {~~~~- We have received letters from Premier Keqiang Li. \color{blue}\href{http://www.moe.edu.cn/publicfiles/business/htmlfiles/moe/moe_838/201505/186765.html}{\textbf{[press]}}}\\
+          {- Led the work of \emph{Project Dept}, the \emph{Public Relation Dept.} \& the \emph{Standing Dept.} }\\
+          {~~~~- Responsible for the Maker Events and Competitions held weekly}\\
+          {~~~~- Such as \emph{Arduino Tutorial}, \emph{Processing}, \emph{3D modeling}, \emph{Design thinking} and \emph{Brain Storming} Workshops, etc.} \\
           {- Directed several projects, and also Winners of many Make-a-thons.}\\
-        \resumeItem{PennyRaiser: A smart donation box
-        \\~~Tsinghua Maker Challenge 2015: \emph{Championship} 
-        \\~~China-US Maker Competition 2015: \emph{3rd Prize}, Top 5/300 teams all over the world}\\
-          {- China-US Maker Competition is the \underline{biggest Make-a-thon in China \& US}.}\\
-          {- I led my team and won the \underline{5th place out of about 300 teams} all over the world in 2015.}
-        \resumeItem{ITE: Your personal phone companion\\~~\emph{Tsinghua Maker Challenge 2016}}\\
-
 
       \resumeItemListEnd
       
@@ -219,50 +229,119 @@
 % \newpage
   
 
+
+
+
+
+%--------Competition Projects-----------
+\sectionwithbox{Projects in Competitions and Awards}
+
+  \resumeSubHeadingListStart
+    \resumeSubheadingProject{PennyRaiser: A smart donation box
+        \color{blue}\href{http://www.todayfocus.cn/p/4149.html}{\textbf{[press]}}
+        \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[press]}}
+        \color{black} }
+        {Apr 2015 - Sep 2015 (3 day; 6 mo)}
+        \resumeItemListStart
+          \resumeItem{\emph{Tsinghua Maker Challenge 2015}: }{\textbf{Championship}}
+          \resumeItem{\emph{China-US Maker Competition 2015}: }{\textbf{3rd Prize, Top 5/300 maker teams from the world} } \\
+          \vspace{1mm}
+            {- \emph{China-US Maker Competition} is the \underline{biggest Make-a-thon in China \& US}.
+            \color{blue}\href{https://www.chinaus-maker.org}{\textbf{[link]}}
+            }\\
+            {- As \underline{\textbf{\emph{Team Leader}}} \& \underline{\textbf{\emph{Software Eng.}}}, won the \underline{5th place out of 300 teams} all over the world in 2015.} \\
+            {~~~- Led \& organized the team. Started the project.} \\
+            {~~~- \emph{iOS app development} using \emph{Swift} with \emph{Xcode}.} \\
+              {~~~~~~- Built features include \emph{TableView present}, \emph{SideMenu}, \emph{Customized Tab Button}, \emph{Customized Segue Effect}.} \\
+              {~~~~~~- \emph{QR Code} support which could connect mobile devices with the hardware.} \\
+            {~~~- \emph{Design}, \emph{3D modeling}, \emph{3D printing} and \emph{Laser cutting} to build to whole prototype.}
+        \resumeItemListEnd
+
+
+    \resumeSubheadingProject{ITE: Your personal 'kids-can-program' phone companion
+        \color{blue}\href{https://mp.weixin.qq.com/s?__biz=MzA5MzMzODQzMQ==\&mid=2650612087\&idx=1\&sn=12fdb18a73edf403c69fd807c391184a\&mpshare=1\&scene=1\&srcid=0117G3nq1r4Pv0uqSLEmG3oy}{\textbf{[post]}}
+        \color{black} }
+        {May 2016 - May 2016 (3 day)}
+        \resumeItemListStart
+          \resumeItem{\emph{Tsinghua Maker Challenge 2016}: }{\textbf{Championship}} \\
+          \vspace{1mm}
+            {- \emph{Tsinghua Maker Challenge} is the \underline{biggest Make-a-thon held in Tsinghua}.}\\
+            {- As \underline{\textbf{\emph{Team Leader}}} \& \underline{\textbf{\emph{Software Eng.}}}, won the \underline{Championship} in 2016.} \\
+            {~~~- Led \& organized the team. Started the project.} \\
+            {~~~- \emph{iOS app development} using \emph{Swift} with \emph{Xcode}.} \\
+              {~~~~~~- Built features include \emph{TableView present}, \emph{Customized Tab Button}, \emph{Customized Segue Effect}.} \\
+              {~~~~~~- Integrated open-sourced-project using \emph{CocoaPods}} \\
+        \resumeItemListEnd
+
+    \resumeSubheadingProject{A gameAI for Tsinghua Teamstyle Programming Contest 2015}
+        {Apr 2015 - May 2015 (1 mo)}
+        \resumeItemListStart
+          \resumeItem{\emph{Tsinghua Teamstyle Programming Contest 2015}: }{\textbf{3rd Prize}} \\
+          \vspace{1mm}
+            {- \emph{Tsinghua Teamstyle Programming Contest} is \underline{one of the biggest programming competitions writing AI for games}.} \\
+            {- As \underline{\textbf{\emph{Team Leader}}}, won the \underline{3rd Prize} in 2015.} \\
+            {~~~- Led the team.} \\
+            {~~~- Developed strategies and implemented using C++}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+
+
 %--------SELECTED HONORS------------
 \sectionwithbox{Selected Honors}
   \resumeSubHeadingListStart
-    \resumeSubheadinghonorone
+    \resumeSubheadinghonor
       {Maker Representative}{, Tsinghua Universtiy \color{blue}\href{http://lzhbrian.me/posts_figure/maker.jpeg}{\textbf{[picture]}}}
+      {Honored this title by the contributions \& achievements in the maker field.}
     
      \resumeSubheadinghonor
       {1st Prize Scholarship for Taiwanese Student}{, Minister of Education, P.R.C.}
-      {\underline{Top 3/50}, Awarded 1st prize scholarship honor for Taiwanese student studying in Mainland China.}
+      {\underline{Top 3/50}, Awarded 1st prize scholarship honor for Taiwanese students studying in Mainland China.}
 
-     \resumeSubheadinghonor
-      {Outstanding Scholarship for Comprehensive Performance}{, Tsinghua University}
-      {\underline{Top 35/260}, including excellence scholarships for \underline{Science and Technology}, \underline{Social Work}, \underline{Arts and Cultural}, respectively.}
-    
-  \resumeSubHeadingListEnd
-
-
-%--------SELECTED COMPETITIONS------------
-\sectionwithbox{Selected Competitions Awards}
-  \resumeSubHeadingListStart
-    \resumeSubheadinghonor
-      {Tsinghua Maker Challenge 2015,2016}{ : \emph{Consecutive Championships} 
-      	
-	\color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[2015 press]}}
-	\color{blue}\href{https://mp.weixin.qq.com/s?__biz=MzA5MzMzODQzMQ==\&mid=2650612087\&idx=1\&sn=12fdb18a73edf403c69fd807c391184a\&mpshare=1\&scene=1\&srcid=0117G3nq1r4Pv0uqSLEmG3oy}{\textbf{[2016 description]}} 
-	
-	}
-      {\underline{Championships of 2015, 2016 respectively}. Tsinghua Maker Challenge is the biggest Make-a-thon held in Tsinghua.}
-    
-    
      \resumeSubheadinghonortwo
-      {China-US Maker Competitions Final}{ : \emph{3rd Prize}, \emph{Top 5/300 teams all over the world}
-      \color{blue}\href{https://www.chinaus-maker.org}{\textbf{[link]}}
-      \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[press]}}
-      \color{blue}\href{http://www.todayfocus.cn/p/4149.html}{\textbf{[press]}}
-      }
-      {China-US Maker Competition is the \underline{biggest Make-a-thon in China \& US}}
-      {I led my team and won the \underline{5th place out of about 300 teams} all over the world in 2015.}
-
-     \resumeSubheadinghonor
-      {Tsinghua Teamstyle Program Contest}{ : \emph{3rd Prize}}
-      {A programming competition writing AI for games. I led my team and won the 5th place in 2015.}
+      {Zheng Geru Scholarship for Comprehensive Performance}{, Tsinghua University}
+      {\underline{Top 35/260}, for students who have achieved multiple individual scholarships.}
+      {Including excellence scholarships for: \underline{\small\textbf{Science and Technology}}, \underline{\small\textbf{Social Work}}, \underline{\small\textbf{Arts and Cultural}}, respectively.}
     
   \resumeSubHeadingListEnd
+
+
+% %--------SELECTED COMPETITIONS------------
+% \sectionwithbox{Selected Competitions Awards}
+%   \resumeSubHeadingListStart
+%     \resumeSubheadinghonor
+%       {Tsinghua Maker Challenge 2015,2016}{ : Consecutive Championships 
+        
+%   \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[2015 press]}}
+%   \color{blue}\href{https://mp.weixin.qq.com/s?__biz=MzA5MzMzODQzMQ==\&mid=2650612087\&idx=1\&sn=12fdb18a73edf403c69fd807c391184a\&mpshare=1\&scene=1\&srcid=0117G3nq1r4Pv0uqSLEmG3oy}{\textbf{[2016 description]}} 
+  
+%   }
+%       {\underline{Championships of 2015, 2016 respectively}. Tsinghua Maker Challenge is the biggest Make-a-thon held in Tsinghua.}
+    
+    
+%      \resumeSubheadinghonortwo
+%       {China-US Maker Competitions Final}{ : 3rd Prize 
+%       \color{blue}\href{https://www.chinaus-maker.org}{\textbf{[link]}}
+%       \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[press]}}
+%       \color{blue}\href{http://www.todayfocus.cn/p/4149.html}{\textbf{[press]}}
+%       }
+%       {China-US Maker Competition is the \underline{biggest Make-a-thon in China \& US}}
+%       {I led my team and won the \underline{5th place out of about 300 teams} all over the world in 2015.}
+
+%      \resumeSubheadinghonor
+%       {Tsinghua Teamstyle Program Contest}{ : 3rd Prize}
+%       {A programming competition writing AI for games. I led my team and won the 5th place in 2015.}
+    
+%   \resumeSubHeadingListEnd
+
 
 
 %--------PUBLICATIONS------------
@@ -270,7 +349,7 @@
   \resumeSubHeadingListStart
 	\resumeSubheadingPublication{H.Yan, \textbf{T.Lin}, G.Wang, Y.Li, H.Zheng, D.Jin, and B.Zhao, On Migratory Behavior in Video Consumption, \emph{Paper Submitted}.}
 	\resumeSubheadingPublication{H.Yan, \textbf{T.Lin}, C.Gao, Y.Li, and D.Jin, On the Understanding of User Behaviors Over Multiple Video Content Providers, \emph{Journal Paper Submitted}.}
-	\resumeSubheadingPublication{H.Yan, Z.Wang, \textbf{T.Lin}, Y.Li, Y.Wang, and D.Jin, Proﬁling Users by Online Shopping Behaviors, \emph{Poster Paper Submitted}.}
+	\resumeSubheadingPublication{H.Yan, Z.Wang, \textbf{T.Lin}, Y.Li, Y.Wang, and D.Jin, Profiling Users by Online Shopping Behaviors, \emph{Poster Paper Submitted}.}
   \resumeSubHeadingListEnd
   
   
