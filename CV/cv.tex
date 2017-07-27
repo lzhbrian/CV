@@ -1,0 +1,397 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Albert Einstein - vita},pdfauthor={Albert Einstein}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+
+\usepackage[osf,proportional]{libertine}
+% Linux Libertine Font (default)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Lin, Tzu-Heng (Brian)}\\[0.4cm] % Your name
+\emph{Senior undergraduate student} (graduate: 2018)\\
+Department of Electronic Engineering\\
+Tsinghua University, Beijing, P.R.C\\% Your current or previous employment position
+Taiwanese citizen, Living in Beijing\\[1cm] 
+% Institute for Advanced Study\\ % Your address
+% Einstein Drive\\
+% Princeton, N.J. \texttt{08540}
+% U.S.A.\\[.2cm]
+Phone: \texttt{+86-131-2192-9165}\\ % Your phone number
+%Fax: \texttt{609-924-8399}\\[.2cm] % Your fax number
+Email: \href{mailto:lzhbrian@gmail.com}{lzhbrian@gmail.com}\\ % Your email address
+Wechat: lzhbrian\\
+Github: \href{http://www.github.com/lzhbrian}{github.com/lzhbrian}\\
+Linkedin: \href{http://www.linkedin.com/in/lzhbrian}{linkedin.com/in/lzhbrian}\\
+\textsc{URL}: \href{http://www.lzhbrian.me}{www.lzhbrian.me}\\ % Your academic/personal website
+
+% \vfill % Whitespace between contact information and specific CV information
+
+%------------------------------------------------
+
+% Born: April 13, 1996---Taiwan\\ % Your date of birth
+% Nationality: Taiwanese % Your nationality
+
+%------------------------------------------------
+
+% \section*{Current position}
+
+% \emph{Senior undergraduate student}, Department of Electronic Engineering, Tsinghua University % Your current or previous employment position
+
+%------------------------------------------------
+
+\section*{Areas of Interest}
+Computer Science \\
+Data Mining, 
+Machine Learning \\
+Computer Vision 
+% Your primary areas of research interest
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Education}
+\years{2014-2018}\textsc{B.S.} in Electronic Information, Tsinghua University\\
+\years{2014-2018}\textsc{B.B.A.} in Management (2nd Degree), Tsinghua University
+
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Appointments held}
+\subsection*{Professional}
+\years{2017.2-}Research Software Engineer Intern, Owlii Inc.\\
+\years{2016.4-}Research Assistant, Future Internet \& Communication Lab, Tsinghua University\\
+\years{2016.7-2016.8}Summer Research Intern, Academia Sinica, Taiwan
+\subsection*{Student Associations}
+\years{2015.9-2017.2}Vice Chair, THU MakerSpace\\
+\years{2015.7-2016.5}Vice Leader (Web Dev), Dept. of Web and Publicity, Student Asso.of Sci. \& Tech., EE, THU\\
+\years{2015.9-2016.5}Vice Leader, Dept. of Competition, Student Asso.of Sci. \& Tech., THU
+
+
+\section*{Service to the profession}
+\years{2017}
+Reviewer, \emph{IEEE TNSM} (IEEE Transactions on Network and Service Management)
+
+
+
+
+%----------------------------------------------------------------------------------------
+%   Technology skills
+%----------------------------------------------------------------------------------------
+
+\section*{Skills}
+\subsection*{Knowledge}
+\years{Experienced}
+Data Mining, 
+Machine Learning, 
+User Behavior Analysis\\
+Startup\\
+\years{Familiar}
+Computer Vision\\
+Computer Network\\
+Computer Architecture \\
+Software Engineering\\
+Signal Processing, Electronic Circuit Design
+
+
+
+\subsection*{Programming Languages}
+\years{Experienced} Python, Matlab, C/C++\\
+\years{Familiar} Shell Script, R, Verilog, Java, HTML, CSS, SQL
+\subsection*{Tools \& Softwares}
+\years{Experienced} git, Hadoop, Qt, CUDA, \LaTeX\\
+                    Linux, OSX\\
+\years{Familiar} CMake, gcc, g++\\
+                 OpenCV, Dlib\\
+                 Meshlab, Meshlabserver (Contributor on Github)\\
+                 Weka, Tableau, theano, DL4J\\
+                 gem5, Wireshark, Multisim, Modelsim\\
+                 Arduino, Processing, SketchUp, 3D printer\\
+                 Web Dev (Django,Yii), iOS Dev (Xcode), Android Dev (Android Studio)
+\subsection*{Languages}
+\years{Native} Mandarin\\
+\years{Fluent}English (TOEFL 102, TOEIC 910, GEPT high-intermediate)\\
+\years{Basic} Taiwanese, Shanghainese
+
+
+%----------------------------------------------------------------------------------------
+%	GRANTS, HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+% \clearpage
+\section*{Honors \& Awards}
+\subsection*{Honors}
+\years{2016}
+Maker Representative, Tsinghua University\\
+\years{2015}
+Member of the \emph{Qi Chuang} Entrepreneurial Talent Training Program, Tsinghua Universtiy\\
+\years{2014}
+Graduate from high school with the highest honor.\\
+College Admission Offers From: \\
+\emph {\small Tsinghua University (THU), Peking University (PKU), Hong Kong University (HKU), \\
+National Taiwan University (NTU), National Tsing Hua University (NTHU)}
+
+
+\subsection*{Awards}
+\years{2016}
+Championship (as Team Leader), Tsinghua Make-a-thon 2016\\
+\years{2015}
+3rd Prize (as Team Leader), Final, China-US Maker Competition, MoE, P.R.C \& Intel\\
+2nd Place (as Team Leader), Beijing, China-US Maker Competition, MoE, P.R.C \& Intel\\
+Championship (as Team Leader), Tsinghua Make-a-thon 2015\\
+3rd Prize (as Team Leader), Tsinghua Programming Contest
+\subsection*{Scholarships}
+\years{2016}
+Zheng Geru Scholarship for Comprehensive Performance, Tsinghua University\\
+Second Prize Scholarship for Taiwanese Student, Minister of Education, P.R.C\\
+Science and Technology Excellence Scholarship, Tsinghua University\\
+Social Work Excellence Scholarship, Tsinghua University\\
+Art and Cultural Excellence Scholarship, Tsinghua University\\
+\years{2015} 
+First Prize Scholarship for Taiwanese Student, Minister of Education, P.R.C\\
+Science and Technology Excellence Scholarship, Tsinghua University\\
+Social Work Excellence Scholarship, Tsinghua University
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Publications}
+\subsection*{Conference}
+\years{Globecom'17} 
+Huan Yan, \textbf{Tzu-Heng Lin}, Ming Zeng, Jing Wu, Jiaxin Huang,
+Yong Li, Depeng Jin.
+Characterizing the Usage of Mobile Video Service in Cellular Networks, 
+In Proceedings of 2017 IEEE Global Communications Conference: Communications Software,
+Services and Multimedia Apps, Singapore, Dec 2017\\
+\years{ICWSM'17} 
+Huan Yan, \textbf{Tzu-Heng Lin}, Gang Wang, Yong Li, Haitao Zheng, Depeng Jin, Ben Y. Zhao.
+A First Look at User Switching Behaviors Over Multiple Video Content Providers. 
+In Proceedings of International AAAI Conference on Web and Social Media, Montreal, Canada,
+May 2017\\
+\years{CoNEXT'17}
+\textbf{Tzu-Heng Lin}, Yong Li, Pengyu Zhang.
+In-app User Clicking Behavior Identification via Mobile Traffic Mining.
+\textbf{Submitted to ACM CoNEXT'17}\\
+\years{CIKM'17}
+Huan Yan, \textbf{Tzu-Heng Lin}, Gang Wang, Yong Li, Haitao Zheng, Depeng Jin and Ben Zhao.
+On Migratory Behavior in Video Consumption.
+\textbf{Submitted to ACM CIKM'17}
+\subsection*{Journal}
+\years{TNSM}
+Huan Yan, \textbf{Tzu-Heng Lin}, Chuhan Gao, Yong Li, Depeng Jin.
+On the Understanding of User Behaviors Over Multiple Video Content Providers.
+\textbf{Submitted to IEEE TNSM}
+
+
+
+% \years{1901}Einstein, Albert (1901), “Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)", \emph{Annalen der Physik} 4: 513\\
+% \years{1905a}Einstein, Albert (1905), “On a Heuristic Viewpoint Concerning the Production and Transformation of Light", \emph{Annalen der Physik} 17: 132–148.\\
+% \years{1905b}Einstein, Albert (1905), A new determination of molecular dimensions. \emph{PhD dissertation}.\\
+% \years{1905c}Einstein, Albert (1905), “On the Motion—Required by the Molecular Kinetic Theory of Heat—of Small Particles Suspended in a Stationary Liquid", \emph{Annalen der Physik} 17: 549–560.\\
+% \years{1905d}Einstein, Albert (1905), “On the Electrodynamics of Moving Bodies", \emph{Annalen der Physik} 17: 891–921.\\
+% \years{1905e}Einstein, Albert (1905), “Does the Inertia of a Body Depend Upon Its Energy Content?", \emph{Annalen der Physik} 18: 639–641.\\
+% \years{1915}Einstein, Albert (1915), “Die Feldgleichungen der Gravitation (The Field Equations of Gravitation)", \emph{Koniglich Preussische Akademie der Wissenschaften}: 844–847\\
+% \years{1917a}Einstein, Albert (1917), “Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)", \emph{Koniglich Preussische Akademie der Wissenschaften}\\
+% \years{1917b}Einstein, Albert (1917), “Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)", \emph{Physikalische Zeitschrift} 18: 121–128
+
+%------------------------------------------------
+
+% \subsection*{Books}
+
+% \years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
+
+% %------------------------------------------------
+
+% \subsection*{Newspaper articles}
+
+% \years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
+% \years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
+
+
+\clearpage
+\section*{Courses taken}
+
+\subsection*{Online MOOC}
+\years{CS344} Intro to Parallel Programming (GPU) (Udacity)
+
+\subsection*{B.S. in Electronic Information}
+\years{Computer \\Science related}
+Introduction to Information Science and Technology\\
+Introduction to Electronic Information Science and Technology (1)(2)\\
+Operating System\\
+Mordern Computer Architecture\\
+Communications and Networks\\
+Computer Network: Technology and Practice\\
+Fundamentals of Network technology\\
+Fundamental of Digital Logic and Processor (CPU)\\
+Fundamental Experiment of Digital Logic and Processor (CPU)\\
+\years{Programming \\related}
+Data and Algorithm\\
+C/C++ Programming (1)(2)\\
+Advanced Matlab Programming\\
+Web Design and Produce\\
+\years{Math related}
+Calculus A (1)(2)\\
+Linear Algebra (1)(2)\\
+Discrete Mathematics\\
+Probability and Stochastic Processes (1)(2)\\
+Functions of Complex Variables and Equations of Mathematical Physics\\
+Introduction of Mathematical Modelling\\
+\years{AI and ML \\related}
+Pattern Recognition\\
+Media and Cognition\\
+Digital Image Processing\\
+Dialogue between Neuroscience and Artificial Intelligence: Fudamentals and Frontiers\\
+\years{Electronic \\Engineering \\related}
+Physics for Scientists and Engineers A (1)(2)\\
+Fundamentals of Electronic Circuits and System (1)(2)\\
+Electrodynamics\\
+Quantum Mechanics and Statistical Mechanics\\
+Foundation of Solid State Physics\\
+Lab. of Physics (1)(2)\\
+Synthetical Practice of Electronics System Design\\
+Basic Experiment of Electronic Circuits and Systems\\
+Physical Electronics Foundation Laboratory\\
+Electronic Circuit Course Design\\
+Electromagnetic Field and Microwave Experiment\\
+Communication Circuits Laboratory\\
+\years{Signal \\Processing \\related}
+Signals and Systems\\
+Digital Signal Processing
+
+\subsection*{B.B.A in Management (2nd Degree)}
+\years{Economics and \\Management \\related}
+Accounting Principles\\
+Principles of Economics\\
+Business 101\\
+Strategic Management\\
+Marketing Management\\
+Operation Management\\
+Intellectual Property\\
+Information Systems\\
+Corporate Finance\\
+Organizational Behavior\\
+\years{Startup related}
+Innovation and entreprenuership: insight from Silicon Valley\\
+How To Start a Startup - Face To Face with Famous Entrepreneurs\\
+Social innovation and entrepreneurship\\
+Internet Business Model Innovation\\
+Management of Technological Innovation\\
+Leadership\\
+Entrepreneurial Finance\\
+Leadership Development\\
+
+
+
+
+\section*{Projects}
+To be written.
+
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+% \section*{Teaching}
+
+% ...
+
+%------------------------------------------------
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+{\scriptsize Last updated: \today}
+% \- •\- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

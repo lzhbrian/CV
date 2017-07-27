@@ -1,0 +1,320 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+% Edited : lzhbrian
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{CJK}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+%%%
+% add by lzhbrian
+\newcommand{\resumeSubheadingProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \emph{\small#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubheadingedu}[7]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      ~~{\small#3} {\small#4} & {\small #5} \\
+      ~~{\small#6} {\small#7} &\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadinghonor}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2}\\
+      ~~\textit{\small#3}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadinghonortwo}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2}\\
+      ~~\textit{\small#3}\\
+      ~~\textit{\small#4}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\sectionwithbox}[1]{
+  \section[]{\colorbox[rgb]{0.8,0.8,0.8}{\textbf{#1}}}
+}
+\newcommand{\resumeSubheadinghonorone}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingPublication}[1]{
+  \vspace{-1pt}\item
+      {#1}
+    \vspace{-5pt}
+}
+
+%%%
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\AtBeginDocument{\csname CJK*\endcsname{UTF8}{gbsn}} 
+%\AtEndDocument{\clearpage\csname endCJK*\endcsname}
+
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \color{blue}\textbf{\href{http://lzhbrian.me/}{
+    \Large 林子恒~Tzu-Heng Lin (Brian) \small 清华大学~电子工程系
+  }} & 
+  Website : \color{blue}\href{http://lzhbrian.me/}{http://lzhbrian.me} \\
+   \small~~~~\textbf{Tech Lover, Fast \& Tireless Learner, Leadership, \emph{Creativity drives my life.}} & 
+  Email : \href{mailto:lzhbrian@gmail.com}{lzhbrian@gmail.com} \\
+  \small~~~~在\textbf{台湾}出生, 在\textbf{上海}长大, 目前在\textbf{北京}读大学~(预计毕业: 2018) & Mobile : +86-131-2192-9165 \\
+   %~\underline{Objective : \emph{Seeking Summer Internship in 2017}} &
+   &
+    \color{blue}\href{http://www.linkedin.com/in/lzhbrian}{[Linkedin,}
+  \color{blue}\href{http://www.github.com/lzhbrian}{Github: }lzhbrian]
+\end{tabular*}
+
+\vspace{-5mm}
+
+%-----------EDUCATION-----------------
+%\section{\colorbox[rgb]{0.8,0.8,0.8}{\makebox(70,10){Education}}}
+  \sectionwithbox{教育经历}
+  \resumeSubHeadingListStart
+    \resumeSubheadingedu
+      {清华大学 (双学位)}{中国~北京}
+      {工学学士~-~电子工程}{~}{2014.8 - 2018.6}
+      {管理学学士~-~工商管理 (第二学位)}{~}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\sectionwithbox{技能}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, C/C++, Matlab $>$ R, Java}
+      \hfill
+      \textbf{Tools}{: git, Hadoop, Qt, CUDA, \LaTeX, Linux, OSX}
+    }
+    \vspace{-7pt}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Experienced}{: Machine Learning, Data Mining}
+      \hfill
+       \textbf{Familiar}{: Computer Vision, iOS Dev, Web Dev}
+    }
+    \vspace{-5pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\sectionwithbox{工作经验}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {\href{http://www.owlii.com}{Owlii Inc.}}{中国~北京}
+      {\textbf{研究软件工程实习生}}{2016.3 - Present (5 mo)}
+      \resumeItemListStart
+        \resumeItem{实时脸部表情捕捉系统 (on-going)}\\
+        \vspace{1mm}
+        \resumeItem{CUDA C++ GPU 并行编程加速}\\
+        \vspace{1mm}
+
+          %{- Research and realize a real-time facial tracking and animation system.}\\
+        
+      \resumeItemListEnd
+  
+  
+    \resumeSubheading
+      {\href{http://fi.ee.tsinghua.edu.cn}{清华大学}}{中国~北京}
+      {\textbf{研究助理} in 未来通信与网络实验室}{2016.4 - Present (1.5 yr)}
+      \resumeItemListStart
+   \resumeItem{已发表/接受: AAAI ICWSM, IEEE Globecom}\\
+   \resumeItem{已提交: ACM CoNEXT, ACM CIKM, IEEE TNSM}\\
+   \resumeItem{大数据、用户画像分析~多个项目}\\
+        \vspace{1.5mm}
+   {- 包括~网络视频服务用户行为挖掘, 在线购物用户行为挖掘, 应用内用户行为识别, 等等.}\\
+
+   %{- Processing and analyzing TB-scale datasets, using Hadoop, Python, Matlab.}
+
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {\href{http://mmnet.iis.sinica.edu.tw}{Academia Sinica 中央研究院}}{台湾~台北}
+      {\textbf{暑期研究实习生} in 资料洞察实验室}{2016.7 - 2016.8 (2 mo)}
+      \resumeItemListStart
+        \resumeItem{数据挖掘~200,000 个 台湾的~Facebook \emph{粉丝专页}}\\
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\sectionwithbox{学生组织}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{http://www.thumaker.cn}{清华创客空间, 清华大学}}{中国~北京}
+      {\textbf{副会长}, 2 年创客领域经验}{2015.9 - 2017.2 (1.5 yr)}
+
+    \resumeSubheading
+      {\href{http://www.eesast.com}{清华大学电子工程系~科学技术协会}}
+      {中国~北京}
+      {\textbf{网宣部 副部长}, 网站组组长}{2015.7 - 2016.5 (9 mo)}
+      
+  \resumeSubHeadingListEnd
+
+
+%--------SELECTED HONORS------------
+\sectionwithbox{部分奖项与荣誉}
+  \resumeSubHeadingListStart
+    \resumeSubheadinghonorone
+      {审稿人}{, \textbf{IEEE TNSM} (IEEE Transactions on Network and Service Management)}
+
+    \resumeSubheadinghonorone
+      {\href{http://lzhbrian.me/posts_figure/maker.jpeg}{清华创客代表}}{, 因在创客领域所获得的成就以及贡献, 清华大学}
+      
+    \resumeSubheadinghonor
+      {启创计划成员}{, 清华大学}
+      {由清华大学校团委所主持培养创新、创业人才计划，\underline{\textbf{全校仅录取~30~余人}}}
+
+    \resumeSubheadinghonor
+      {5th/300 支世界各地队伍 (三等奖), 中美青年创客大赛}{, 中华人民共和国~教育部}
+      {Role: \textbf{\emph{队长，项目负责人}} \& \textbf{\emph{iOS 开发}}}
+            
+    \resumeSubheadinghonorone
+      {冠军 (1st/15 支队伍), 清华创客挑战赛~2016}{, 清华大学}
+
+    \resumeSubheadinghonorone
+      {冠军 (1st/15 支队伍), 清华创客挑战赛~2015}{, 清华大学}
+\resumeSubHeadingListEnd
+
+
+%--------SCHOLARSHIPS------------
+\sectionwithbox{奖学金}
+
+  \resumeSubHeadingListStart
+     \resumeSubheadinghonor
+      {中国教育部台湾学生 一等(2015)、二等奖学金(2016)}{, 中华人民共和国~教育部}
+      {\underline{\textbf{Top 3/50}}, 颁发给在大陆学习的优秀台湾学生}
+
+     \resumeSubheadinghonortwo
+      {清华之友~-~郑格如~综合奖学金(2016)}{, 清华大学}
+      {\underline{\textbf{Top 35/260}}, 获得~\textbf{多个单项奖学金}~后所参评的\textbf{综合奖学金}}
+      {包括: \underline{\small\textbf{科技创新优秀奖学金}}, \underline{\small\textbf{社工优秀奖学金}}, \underline{\small\textbf{文艺优秀奖学金}}}
+
+  \resumeSubHeadingListEnd
+
+
+
+% %--------SELECTED COMPETITIONS------------
+% \sectionwithbox{Selected Competitions Awards}
+%   \resumeSubHeadingListStart
+%     \resumeSubheadinghonor
+%       {Tsinghua Maker Challenge 2015,2016}{ : Consecutive Championships 
+        
+%   \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[2015 press]}}
+%   \color{blue}\href{https://mp.weixin.qq.com/s?__biz=MzA5MzMzODQzMQ==\&mid=2650612087\&idx=1\&sn=12fdb18a73edf403c69fd807c391184a\&mpshare=1\&scene=1\&srcid=0117G3nq1r4Pv0uqSLEmG3oy}{\textbf{[2016 description]}} 
+  
+%   }
+%       {\underline{Championships of 2015, 2016 respectively}. Tsinghua Maker Challenge is the biggest Make-a-thon held in Tsinghua.}
+    
+    
+%      \resumeSubheadinghonortwo
+%       {China-US Maker Competitions Final}{ : 3rd Prize 
+%       \color{blue}\href{https://www.chinaus-maker.org}{\textbf{[link]}}
+%       \color{blue}\href{http://bjrb.bjd.com.cn/html/2015-12/07/content_335081.htm}{\textbf{[press]}}
+%       \color{blue}\href{http://www.todayfocus.cn/p/4149.html}{\textbf{[press]}}
+%       }
+%       {China-US Maker Competition is the \underline{biggest Make-a-thon in China \& US}}
+%       {I led my team and won the \underline{5th place out of about 300 teams} all over the world in 2015.}
+
+%      \resumeSubheadinghonor
+%       {Tsinghua Teamstyle Program Contest}{ : 3rd Prize}
+%       {A programming competition writing AI for games. I led my team and won the 5th place in 2015.}
+    
+%   \resumeSubHeadingListEnd
+
+
+
+%--------PUBLICATIONS------------
+% \sectionwithbox{论文}
+%   \resumeSubHeadingListStart
+%   	\resumeSubheadingPublication{H.Yan, \large\textbf{TH.Lin}\normalsize, G.Wang, Y.Li, H.Zheng, D.Jin, and B.Zhao, A First Look at User Switching Behaviors Over Multiple Video Content Providers. \textbf{In AAAI ICWSM '17}}
+% 	\resumeSubheadingPublication{H.Yan, \large\textbf{TH.Lin}\normalsize, G.Wang, Y.Li, H.Zheng, D.Jin, and B.Zhao, On Migratory Behavior in Video Consumption, \emph{Conference Paper Submitted}.}
+% 	\resumeSubheadingPublication{H.Yan, \large\textbf{TH.Lin}\normalsize, C.Gao, Y.Li, and D.Jin, On the Understanding of User Behaviors Over Multiple Video Content Providers, \emph{Journal Paper Submitted}.}
+% 	\resumeSubheadingPublication{H.Yan, Z.Wang, \large\textbf{TH.Lin}\normalsize, Y.Li, Y.Wang, and D.Jin, Profiling Users by Online Shopping Behaviors, \emph{Conference Poster Paper Submitted}.}
+%   \resumeSubHeadingListEnd
+  
+  
+%-------------------------------------------
+\end{CJK*}
+\end{document}
