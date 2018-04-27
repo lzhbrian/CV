@@ -1,6 +1,6 @@
 # Resume & CV
 
-
+(information is outdated)
 
 ### Resume
 
